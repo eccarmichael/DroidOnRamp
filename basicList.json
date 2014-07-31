@@ -1,22 +1,24 @@
 {
-  "bookmarks":[],
   "locations":[{
-    "id": "1",
+    "id": 11,
     "title": "Oaxaca, Mexico",
     "description": "Oaxaca, is one of the 31 states which, along with the Federal District, make up the 32 federative entities of Mexico. Its capital city is Oaxaca de Juarez.",
     "imageUrl": "http://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/FrontOaxacaMainCathedral.jpg/320px-FrontOaxacaMainCathedral.jpg",
     "delicacies": [
       {
+        "id": 111,
         "title": "Chapulines",
-        "description": "Chapulines, plural for chapuliÂ­n, are grasshoppers, that are commonly eaten in certain areas of Mexico. In Spain and most Spanish speaking countries, the word for grasshopper is saltamontes or salton. They are collected only at certain times of year (from their hatching in early May through the late summer/early autumn). After being thoroughly cleaned and washed, they are toasted on a comal (clay cooking surface) with garlic, lime juice and salt containing extract of agave worms, lending a sour-spicy-salty taste to the finished product. Sometimes the grasshopers are also toasted with chili, although it can be used to cover up for stale chapulines. One of the regions of Mexico where chapulines are most widely consumed is Oaxaca, where they are sold as snacks at local sports events and are becoming revived among foodies. It's debated how long Chapulines have been a food source in Oaxaca. There is one reference to grasshoppers that are eaten in early records of the Spanish conquest, in early to mid 16th century. Besides Oaxaca, chapulines are popular in areas surrounding Mexico City. They may be eaten individually as a botana (snack) or as a filling, e.g.: tlayuda filled with chapulines.",
+        "description": "Chapulines, plural for chapuli­n, are grasshoppers, that are commonly eaten in certain areas of Mexico. In Spain and most Spanish speaking countries, the word for grasshopper is saltamontes or salton. They are collected only at certain times of year (from their hatching in early May through the late summer/early autumn). After being thoroughly cleaned and washed, they are toasted on a comal (clay cooking surface) with garlic, lime juice and salt containing extract of agave worms, lending a sour-spicy-salty taste to the finished product. Sometimes the grasshopers are also toasted with chili, although it can be used to cover up for stale chapulines. One of the regions of Mexico where chapulines are most widely consumed is Oaxaca, where they are sold as snacks at local sports events and are becoming revived among foodies. It's debated how long Chapulines have been a food source in Oaxaca. There is one reference to grasshoppers that are eaten in early records of the Spanish conquest, in early to mid 16th century. Besides Oaxaca, chapulines are popular in areas surrounding Mexico City. They may be eaten individually as a botana (snack) or as a filling, e.g.: tlayuda filled with chapulines.",
         "imageUrl": "http://upload.wikimedia.org/wikipedia/commons/0/01/Chapulines.jpg"
       },
       {
+        "id": 112,
         "title": "Queso Oaxaca",
         "description": "Queso Oaxaca is a white, semihard cheese from Mexico, similar to unaged Monterey Jack, but with a mozzarella-like string cheese texture. It is named after the state of Oaxaca in southern Mexico, where it was first made. The string cheese process, originally from Italy, which is used to produce mozarella, was brought to Mexico by the Dominican monks that settled in Oaxaca. However, as buffalo milk was unavailable, they started using cow milk instead. It is available in several different shapes. It is also known as quesillo Oaxaca or thread cheese when shaped like a ball. Shaped in bricks for slicing, it is called asadero (meaning roaster or broiler) or queso quesadilla.\n\nThe production process is complicated and involves stretching the cheese into long ribbons and rolling it up like a ball of yarn. Italian mozzarella is another cheese which is processed by stretching (the pasta filata process).\n\nQueso Oaxaca is used widely in Mexican cuisine, especially in quesadillas and empanadas, where the queso Oaxaca is melted and other stuffings, such as huitlacoche and squash flowers are added to the filling.",
         "imageUrl": "http://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Quesillo_de_Oaxaca.png/288px-Quesillo_de_Oaxaca.png"
       },
       {
+        "id": 113,
         "title": "Chocolate",
         "description": "Oaxaca is an important producer and exporter of coffee, but the more important drink is chocolate. Oaxaca is one of the Mexican states that produces cacao, along with Veracruz, Tabasco, Chiapas, Morelos, Guerrero and Michoacn. Cacao and chocolate have been used in the state as food, drink and medicine. In the past the cacao beans served as a form of money.\n\nIn the center of the city of Oaxaca, various businesses grind and prepare cacao for hot chocolate drinks, moles, and more. The best known of these businesses is El Mayordomo. Inside, there large mills grind beans that are then mixed with sugar and other flavorings such as almonds and cinnamon. Most of the cacao is processed for drinking. Hot chocolate is prepared with the chocolate mixture with water or milk and heated in a pot or pitcher. Before serving, a froth is created with a special instrument is twirled rapidly by rubbing the handles between the palms.\n\nThough most chocolate is consumed as a hot beverage, it is also an important ingredient in a cold beverage called tejate. It is made with fermented corn, cacao, and the seed of the mamey fruit. It is traditionally served in dried and painted gourds. Tejate is usually found in the towns just outside of the city of Oaxaca. It is similar to the pozol of Chiapas. The drink used to be considered a complete meal.",
         "imageUrl": "http://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Oaxacanhotchocolate.jpg/320px-Oaxacanhotchocolate.jpg"
@@ -24,23 +26,25 @@
     ]
   },
   {
-    "id": "2",
-    "title": "Philadelphia, Pennysvania, USA",
-    "description": "City of Brotherly Love",
-    "imageUrl":
-    "http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Seal_of_Philadelphia%2C_Pennsylvania.svg/200px-Seal_of_Philadelphia%2C_Pennsylvania.svg.png",
+    "id": 22,
+    "title": "Philadelphia, Pennsylvania",
+    "description": "Philadelphia is the largest city in the Commonwealth of Pennsylvania, the fifth-most-populous city in the United States, and the core of the sixth-largest metropolitan area in the country. Located in the Northeastern United States at the confluence of the Delaware and Schuylkill rivers, Philadelphia is the economic and cultural center of the Delaware Valley.\n\nThe population of the city — Pennsylvania's only consolidated city-county — was measured at 1,526,006 in 2010 and estimated at 1,553,165 in 2013, according to the United States Census Bureau. The five Pennsylvania counties nearest Philadelphia have a total population of 4,008,994, while its Metropolitan Statistical Area, which includes parts of four states, is home to more than 6 million people.\n\nPopular nicknames for Philadelphia are Philly and The City of Brotherly Love, the latter of which comes from the literal meaning of the city's name in Greek, compounded from philos (loving), and adelphos (brother).\n\nIn 1682, William Penn founded the city to serve as capital of Pennsylvania Colony. By the 1750s, Philadelphia had surpassed Boston to become the largest city and busiest port in British America, and second in the British Empire, behind London. During the American Revolution, Philadelphia played an instrumental role as a meeting place for the Founding Fathers of the United States, who signed the Declaration of Independence in 1776 and the Constitution in 1787.\n\nPhiladelphia was one of the nation's capitals during the Revolutionary War, and the city served as the temporary U.S. capital while Washington, D.C., was under construction. During the 19th century, Philadelphia became a major industrial center and railroad hub that grew from an influx of European immigrants. It became a prime destination for African Americans during the Great Migration and surpassed two million occupants by 1950.\n\nThe city is the center of economic activity in Pennsylvania, and is home to the Philadelphia Stock Exchange and several Fortune 500 companies.\n\nPhiladelphia is known for its arts and culture. The cheesesteak and soft pretzel are emblematic of Philadelphia cuisine, which is shaped by the city's ethnic mix. The city has more outdoor sculptures and murals than any other American city, and Philadelphia's Fairmount Park is the largest landscaped urban park in the world.\n\nGentrification of Philadelphia's neighborhoods continues into the 21st century and the city has reversed its decades-long trend of population loss.",
+    "imageUrl": "http://upload.wikimedia.org/wikipedia/en/thumb/7/79/Line_at_Love_Park_Statue.jpg/320px-Line_at_Love_Park_Statue.jpg",
     "delicacies": [
       {
+        "id": 221,
         "title": "Cheesesteaks",
         "description": "A cheesesteak, also known as a Philadelphia cheesesteak, Philly cheesesteak, cheesesteak sandwich, cheese steak, or steak and cheese, is a sandwich made from thinly-sliced pieces of steak and melted cheese in a long roll. A popular regional fast food, it has its roots in the city of Philadelphia, Pennsylvania.",
         "imageUrl": "http://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Cheesesteak3.jpg/320px-Cheesesteak3.jpg"
       },
       {
+        "id": 222,
         "title": "Scrapple",
         "description": "Scrapple, also known by the Pennsylvania Dutch name panhaas or pan rabbit, is traditionally a mush of pork scraps and trimmings combined with cornmeal and wheat flour, often buckwheat flour, and spices. The mush is formed into a semi-solid congealed loaf, and slices of the scrapple are then pan-fried before serving. Scraps of meat left over from butchering, not used or sold elsewhere, were made into scrapple to avoid waste. Scrapple is best known as a rural American food of the Mid-Atlantic states (Delaware, Maryland, New Jersey, Pennsylvania and Virginia). Scrapple and panhaas are commonly considered an ethnic food of the Pennsylvania Dutch, including the Mennonites and Amish. Scrapple is found in supermarkets throughout the region in both fresh and frozen refrigerated cases.",
         "imageUrl": "http://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Plate_of_scrapple.jpg/320px-Plate_of_scrapple.jpg"
       },
       {
+        "id": 223,
         "title": "Pretzels",
         "description": "A pretzel (German: Brezel) is a type of baked bread product made from dough most commonly found in a unique knot-like shape, often claimed to represent hands in prayer. Pretzels originated in Europe, most likely among monasteries in the Early Middle Ages. The traditional pretzel shape is a distinctive symmetrical looped form, with the ends of a long strip of dough intertwined and then twisted back into itself in a certain way (a pretzel loop). Pretzels now come in different shapes. Salt is the most common seasoning for pretzels, complementing the washing soda or lye treatment that gives pretzels their traditional skin and flavor through the Maillard reaction; other seasonings include sugars, glazes, seeds, and/or nuts.",
         "imageUrl": "http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/BrezelnSalz02.JPG/320px-BrezelnSalz02.JPG"
@@ -48,17 +52,19 @@
     ]
   },
   {
-    "id": "3",
+    "id": 33,
     "title": "Gainesville, Florida",
     "description": "Gainesville is the county seat and largest city in Alachua County, Florida, and the principal city of the Gainesville, Florida Metropolitan Statistical Area (MSA). The population of Gainesville in the 2010 United States Census was 124,354. Gainesville is the largest city in the region of North Central Florida. Gainesville is home to the University of Florida, the nation's eighth largest university campus by enrollment, as well as to Santa Fe College. The Gainesville MSA was ranked as the #1 place to live in North America in the 2007 edition of Cities Ranked and Rated. Also in 2007, Gainesville was ranked as one of the best places to live and play in the United States by National Geographic Adventure. Gainesville was ranked as the 5th meanest city in the United States by the National Coalition for the Homeless twice, first in 2004 for its criminalization of homelessness and then in 2009 for its ordinance restricting soup kitchens to 130 meals a day.",
     "imageUrl": "http://upload.wikimedia.org/wikipedia/commons/3/33/Gainesvillehippodrome.jpg",
     "delicacies": [
       {
+        "id": 331,
         "title": "Orange",
-        "description": "The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus Ã— sinensis in the family Rutaceae. The fruit of the Citrus sinensis is considered a sweet orange, whereas the fruit of the Citrus aurantium is considered a bitter orange. The orange is a hybrid, possibly between pomelo (Citrus maxima) and mandarin (Citrus reticulata), which has been cultivated since ancient times. As of 1987, orange trees were found to be the most cultivated fruit tree in the world. Orange trees are widely grown in tropical and subtropical climates for their sweet fruit. The fruit of the orange tree can be eaten fresh, or processed for its juice or fragrant peel. As of 2012, sweet oranges accounted for approximately 70% of citrus production. In 2010, 68.3 million metric tons of oranges were grown worldwide, production being particularly prevalent in Brazil and the US states of California and Florida.",
+        "description": "The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae. The fruit of the Citrus sinensis is considered a sweet orange, whereas the fruit of the Citrus aurantium is considered a bitter orange. The orange is a hybrid, possibly between pomelo (Citrus maxima) and mandarin (Citrus reticulata), which has been cultivated since ancient times. As of 1987, orange trees were found to be the most cultivated fruit tree in the world. Orange trees are widely grown in tropical and subtropical climates for their sweet fruit. The fruit of the orange tree can be eaten fresh, or processed for its juice or fragrant peel. As of 2012, sweet oranges accounted for approximately 70% of citrus production. In 2010, 68.3 million metric tons of oranges were grown worldwide, production being particularly prevalent in Brazil and the US states of California and Florida.",
         "imageUrl": "http://upload.wikimedia.org/wikipedia/commons/b/b0/OrangeBloss_wb.jpg"
       },
       {
+        "id": 332,
         "title": "Alligator Meat",
         "description": "Alligator meat is the meat from alligators that is consumed by humans. It has been used both historically and in contemporary times in various cuisines of the Southern United States. Alligator eggs are also consumed by humans. Alligator meat has been described as a healthy meat source for humans due to its high protein and low fat composition. It has been described as being mild flavored and firm in texture. In the United States, it can only be legally sourced from alligator farms, and is available for consumer purchase in specialty food stores, some grocery stores, and can also be mail ordered. Some U.S. companies process and market alligator meat derived only from the tail of alligators.",
         "imageUrl": "http://upload.wikimedia.org/wikipedia/commons/7/70/Fried_Gator_Tail_%28505318016%29.jpg"
