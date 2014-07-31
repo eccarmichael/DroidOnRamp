@@ -82,7 +82,7 @@ app.put("/bookmark/:user/:itemid", function(request, response) {
     response.status(200).send({ response: "OK", message: "Bookmark Added", bookmark_id: lastBookMarkId });
 })
 
-function GetUserWhoOwnsBookmark(itemid) {
+function GetUserWhoOwnsBookmark(bookmarkid) {
     for(var i = 0; i < thedata.bookmarks.length; i++) {
         var usermarks = thedata.bookmarks[i];
         if(usermarks.bookmarks.length == 0) {
@@ -95,7 +95,7 @@ function GetUserWhoOwnsBookmark(itemid) {
             if(!mark) 
                 continue;
 
-            if(mark.item_id == itemid) {
+            if(mark.bookmark_id == bookmarkid) {
                 return usermarks.user;
             }
         }
