@@ -13,12 +13,12 @@ var lastBookMarkId = 0;
 //             user: Elise
 //             bookmarks: [
 //                 {
-//                     id = 1, (bookmark id)
-//                     location_id: 2,
+//                     bookmark_id = 1, (bookmark id)
+//                     item_id: 2,
 //                 },
 //                 {
-//                     id = 2,
-//                     location_id: 3
+//                     bookmark_idid = 2,
+//                     item_id: 3
 //                 }
 //             ]
 //             ]}
@@ -34,10 +34,10 @@ app.get("/bookmarks/:user", function(request, response) {
     response.status(200).send(bookmarksForUser);
 })
 
-app.delete("/bookmark/:id", function(request, response) {
+app.delete("/bookmark/:bookmark_id", function(request, response) {
     // TODO: This is dumb, but I'm lazy...
     var indexToDelete;
-    var user = GetUserWhoOwnsBookmark(request.params.id);
+    var user = GetUserWhoOwnsBookmark(request.params.bookmark_id);
 
     if(!user) {
         console.log("Bookmark not found - not deleted");
@@ -58,38 +58,40 @@ app.delete("/bookmark/:id", function(request, response) {
 
     bookmarksForUser = bookmarksForUser.bookmarks.splice(indexToDelete, 1)
     console.log("Bookmark deleted for user " + user);
-    response.status(201).send({ response: "OK", message: "Deleted" });
+    response.status(204).send();
 })
 
-// Body is the location object
-app.put("/bookmark/:user/:locationid", function(request, response) {
+app.put("/bookmark/:user/:itemid", function(request, response) {
     var bookmarksForUser = GetBookmarksForUser(request.params.user);
 
     // Does this bookmark exist already?  If so, return the id of the existing bookmark
-    var id = GetExistingBookmark(bookmarksForUser.bookmarks, request.params.locationid);
-    if(id) {
-        console.log("Duplicate bookmark of bookmark id: " + id)
-        response.status(200).send({ response: "OK", message: "Duplicate Bookmark", id: id });
+    var bookmark_id = GetExistingBookmark(bookmarksForUser.bookmarks, request.params.itemid);
+    if(bookmark_id) {
+        console.log("Duplicate bookmark of bookmark id: " + bookmark_id)
+        response.status(200).send({ response: "OK", message: "Duplicate Bookmark", bookmark_id: bookmark_id });
         return;
     }
 
     bookmarksForUser.bookmarks.push(
         {
-            id: ++lastBookMarkId,
-            location_id: request.params.locationid
+            bookmark_id: ++lastBookMarkId,
+            item_id: request.params.itemid
         });
 
-    console.log("New bookmark added for " + request.params.user + " at location: " + request.params.locationid);
-    response.status(200).send({ response: "OK", message: "Bookmark Added", id: lastBookMarkId });
+    console.log("New bookmark added for " + request.params.user + " for item: " + request.params.itemid);
+    response.status(200).send({ response: "OK", message: "Bookmark Added", bookmark_id: lastBookMarkId });
 })
 
-function GetUserWhoOwnsBookmark(bookmarkId) {
+function GetUserWhoOwnsBookmark(itemid) {
     for(var i = 0; i < thedata.bookmarks.length; i++) {
         var usermarks = thedata.bookmarks[i];
         if(usermarks.bookmarks.length == 0) {
             continue;
         }
 
+            console.log(JSON.stringify(usermarks, null, 4));
+
+        console.log("Num bookmarks for user: " + usermarks.user + ": " + usermarks.bookmarks.length);
         for(var k = 0; k < usermarks.bookmarks.length; k++) {
             var mark = usermarks.bookmarks[k];
             console.log(JSON.stringify(mark, null, 4));
@@ -98,7 +100,7 @@ function GetUserWhoOwnsBookmark(bookmarkId) {
                 continue;
             }
 
-            if(mark.id == bookmarkId) {
+            if(mark.item_id == itemid) {
                 return usermarks.user;
             }
         }
@@ -123,17 +125,17 @@ function GetBookmarksForUser(userName) {
     // Init this user's bookmarks
     thedata.bookmarks.push( {
         user: userName,
-        bookmarks: [{}]
+        bookmarks: []
     });
 
     return thedata.bookmarks[thedata.bookmarks.length-1];
 }
 
-function GetExistingBookmark(marks, locationid) {
+function GetExistingBookmark(marks, itemid) {
     for(var i = 0; i < marks.length; i++) {
         mark = marks[i];
-        if(mark.location_id == locationid) {
-            return mark.id;
+        if(mark.item_id == itemid) {
+            return mark.bookmark_id;
         }
     }
     return null;
