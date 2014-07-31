@@ -75,7 +75,7 @@ app.put("/bookmark/:user/:itemid", function(request, response) {
     bookmarksForUser.bookmarks.push(
         {
             bookmark_id: ++lastBookMarkId,
-            item_id: request.params.itemid
+            item_id: parseInt(request.params.itemid)
         });
 
     console.log("New bookmark added for " + request.params.user + " for item: " + request.params.itemid);
@@ -88,17 +88,12 @@ function GetUserWhoOwnsBookmark(itemid) {
         if(usermarks.bookmarks.length == 0) {
             continue;
         }
-
-            console.log(JSON.stringify(usermarks, null, 4));
-
-        console.log("Num bookmarks for user: " + usermarks.user + ": " + usermarks.bookmarks.length);
         for(var k = 0; k < usermarks.bookmarks.length; k++) {
             var mark = usermarks.bookmarks[k];
             console.log(JSON.stringify(mark, null, 4));
 
-            if(!mark) {
+            if(!mark) 
                 continue;
-            }
 
             if(mark.item_id == itemid) {
                 return usermarks.user;
