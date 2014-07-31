@@ -1,6 +1,6 @@
 var fs = require("fs");
 var host = "127.0.0.1";
-var port = 80;
+var port = 3000;
 var express = require("express");
 var thedata = require("./basicList.json");  // Initial data
 
