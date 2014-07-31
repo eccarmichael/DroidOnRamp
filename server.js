@@ -25,7 +25,7 @@ var lastBookMarkId = 0;
 
 app.get("/", function(request, response){ //root dir
     // Don't return bookmarks.  Just stored in the big array because lazy
-    response.status(200).end({locations: thedata.locations});
+    response.status(200).send({locations: thedata.locations});
 });
 
 app.get("/bookmarks/:user", function(request, response) {
