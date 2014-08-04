@@ -1,8 +1,9 @@
 var fs = require("fs");
-var host = "127.0.0.1";
+var host = "0.0.0.0";
 var port = process.env.PORT || 3000;
 var express = require("express");
 var thedata = require("./basicList.json");  // Initial data
+thedata.bookmarks = [];
 
 var app = express();
 
@@ -82,7 +83,7 @@ app.put("/bookmark/:user/:itemid", function(request, response) {
     response.status(200).send({ response: "OK", message: "Bookmark Added", bookmark_id: lastBookMarkId });
 })
 
-function GetUserWhoOwnsBookmark(itemid) {
+function GetUserWhoOwnsBookmark(bookmarkid) {
     for(var i = 0; i < thedata.bookmarks.length; i++) {
         var usermarks = thedata.bookmarks[i];
         if(usermarks.bookmarks.length == 0) {
@@ -95,7 +96,7 @@ function GetUserWhoOwnsBookmark(itemid) {
             if(!mark) 
                 continue;
 
-            if(mark.item_id == itemid) {
+            if(mark.bookmark_id == bookmarkid) {
                 return usermarks.user;
             }
         }
