@@ -19,3 +19,36 @@ DroidOnRamp
   }
 
 ##Assignment 2
+* Pick a user name (can be your own name) and get the bookmarks for your user
+* Test that the number of booksmarks is accurate (0)
+* Add a bookmark for your user & validate the response
+* Get the bookmarks for your user & validate the response (correct number, correct values).
+ * Don't test data that doesn't make sense to be tested
+* Add another bookmark and fetch all bookarks and validate as you did previously
+* Delete a bookmark & verify the bookmark has been removed
+
+##References
+* The API looks as such:
+```
+app.get("/")
+app.get("/bookmarks/:user")
+app.delete("/bookmark/:bookmark_id")
+app.put("/bookmark/:user/:itemid")
+```
+* The bookmark object on the server looks as such:
+* ```
+*  Bookmark json looks like
+// bookmark = {[
+//             user: Elise
+//             bookmarks: [
+//                 {
+//                     bookmark_id = 1, (bookmark id)
+//                     item_id: 2,
+//                 },
+//                 {
+//                     bookmark_idid = 2,
+//                     item_id: 3
+//                 }
+//             ]
+//             ]}
+```
