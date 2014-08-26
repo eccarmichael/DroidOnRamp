@@ -32,7 +32,7 @@ DroidOnRamp
 ```
 app.get("/")
 app.get("/bookmarks/:user")
-app.delete("/bookmark/:itemid")
+app.delete("/bookmark/:bookmarkid")
 app.put("/bookmark/:user/:itemid")
 ```
 * The bookmark object on the server looks as such:
