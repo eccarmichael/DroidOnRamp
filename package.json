@@ -10,7 +10,9 @@
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "express": "~4.7.2"
+    "express": "~4.7.2",
+    "supertest": "~0.13.0",
+    "should": "~4.0.4"
   },
   "devDependencies": {}
 }
