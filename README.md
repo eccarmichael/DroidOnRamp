@@ -37,18 +37,17 @@ app.put("/bookmark/:user/:itemid")
 ```
 * The bookmark object on the server looks as such:
 * ```
-*  Bookmark json looks like
-// bookmark = {[
-//             user: Elise
-//             bookmarks: [
-//                 {
-//                     bookmark_id = 1, (bookmark id)
-//                     item_id: 2,
-//                 },
-//                 {
-//                     bookmark_idid = 2,
-//                     item_id: 3
-//                 }
-//             ]
-//             ]}
+ bookmark = {[
+             user: Elise
+             bookmarks: [
+                 {
+                     bookmark_id = 1, (bookmark id)
+                     item_id: 2,
+                 },
+                 {
+                     bookmark_idid = 2,
+                     item_id: 3
+                 }
+             ]
+             ]}
 ```
