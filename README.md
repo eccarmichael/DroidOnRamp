@@ -36,7 +36,7 @@ app.delete("/bookmark/:bookmark_id")
 app.put("/bookmark/:user/:itemid")
 ```
 * The bookmark object on the server looks as such:
-* ```
+```
  bookmark = {[
              user: Elise
              bookmarks: [
