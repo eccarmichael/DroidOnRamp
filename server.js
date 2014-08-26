@@ -51,7 +51,9 @@ app.delete("/bookmark/:bookmark_id", function(request, response) {
         var mark = bookmarksForUser.bookmarks[i];
         if(!mark)
             break;
-        if(mark.id == request.params.id) {
+        if(mark.bookmark_id == request.params.bookmark_id) {
+            console.log("Bookmark id to be delete:::: " + mark.bookmark_id);
+            console.log("Index that is deleted: " + i);
             indexToDelete = i;
         }
     }
@@ -82,7 +84,7 @@ app.put("/bookmark/:user/:itemid", function(request, response) {
     response.status(200).send({ response: "OK", message: "Bookmark Added", bookmark_id: lastBookMarkId });
 })
 
-function GetUserWhoOwnsBookmark(itemid) {
+function GetUserWhoOwnsBookmark(bookmark_id) {
     for(var i = 0; i < thedata.bookmarks.length; i++) {
         var usermarks = thedata.bookmarks[i];
         if(usermarks.bookmarks.length == 0) {
@@ -95,7 +97,7 @@ function GetUserWhoOwnsBookmark(itemid) {
             if(!mark) 
                 continue;
 
-            if(mark.item_id == itemid) {
+            if(mark.bookmark_id == bookmark_id) {
                 return usermarks.user;
             }
         }
